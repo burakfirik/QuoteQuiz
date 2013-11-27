@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+ Quotes
+ -->
+<plist version="1.0">
+    <array>
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>Frankly my dear, I don't give a damn.</string>
+            <key>ans1</key>  <string>Gone with the wind</string>
+            <key>ans2</key>  <string>Casablanca</string>
+            <key>ans3</key>  <string>Pride and Prejudice</string>
+            <key>answer</key>  <string>1</string>
+            <key>tip</key>  <string>Check the weather.  Is that a North-Westerly blowing?</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>Here's looking at you kid.</string>
+            <key>ans1</key>  <string>The rear window</string>
+            <key>ans2</key>  <string>To Kill a Mockingbird</string>
+            <key>ans3</key>  <string>Casablanca</string>
+            <key>answer</key>  <string>3</string>
+            <key>tip</key>  <string>Moroccan tea anyone?</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>There's no place like home.</string>
+            <key>ans1</key>  <string>Vertigo</string>
+            <key>ans2</key>  <string>Wizard of Oz</string>
+            <key>ans3</key>  <string>Singin in the rain</string>
+            <key>answer</key>  <string>2</string>
+            <key>tip</key>  <string>Be aware of the wicked witch.</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>Elementary my dear Watson.</string>
+            <key>ans1</key>  <string>Sherlock Holmes</string>
+            <key>ans2</key>  <string>The African Queen</string>
+            <key>ans3</key>  <string>High Noon</string>
+            <key>answer</key>  <string>1</string>
+            <key>tip</key>  <string>It is mystery, this one.</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>Fasten your seatbelts. It's going to be a bumpy night.</string>
+            <key>ans1</key>  <string>The Graduate</string>
+            <key>ans2</key>  <string>All about Eve</string>
+            <key>ans3</key>  <string>West Side Story</string>
+            <key>answer</key>  <string>2</string>
+            <key>tip</key>  <string>The birds and the bees.</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>I have not the pleasure of understanding you.</string>
+            <key>ans1</key>  <string>Pride and Prejudice</string>
+            <key>ans2</key>  <string>Jane Eyre</string>
+            <key>ans3</key>  <string>Rebecca</string>
+            <key>answer</key>  <string>1</string>
+            <key>tip</key>  <string>I have high self esteem.</string>
+        </dict>
+        
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>That's, uh, quite a dress you almost have on...What holds it up?</string>
+            <key>ans1</key>  <string>It happened one night</string>
+            <key>ans2</key>  <string>Roman Holiday</string>
+            <key>ans3</key>  <string>An American in Paris</string>
+            <key>answer</key>  <string>3</string>
+            <key>tip</key>  <string>Fancy a baguette?</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>Love, desire, ambition, faith - without them life is so simple, believe me</string>
+            <key>ans1</key>  <string>Easy Rider</string>
+            <key>ans2</key>  <string>Invasion of the Body Snatchers</string>
+            <key>ans3</key>  <string>Wuthering Heights</string>
+            <key>answer</key>  <string>2</string>
+            <key>tip</key>  <string>Danger, Danger.</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>Go ahead make my day.</string>
+            <key>ans1</key>  <string>Dirty Harry</string>
+            <key>ans2</key>  <string>Star wars</string>
+            <key>ans3</key>  <string>Terminator</string>
+            <key>answer</key>  <string>1</string>
+            <key>tip</key>  <string>Get some soap.</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>May the Force be with you.</string>
+            <key>ans1</key>  <string>One flew of the cuckoo's nest'</string>
+            <key>ans2</key>  <string>Top Gun</string>
+            <key>ans3</key>  <string>Star wars</string>
+            <key>answer</key>  <string>3</string>
+            <key>tip</key>  <string>It's a bright moon tonight.'</string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>Hasta la vista, baby</string>
+            <key>ans1</key>  <string>Harry Potter</string>
+            <key>ans2</key>  <string>Terminator</string>
+            <key>ans3</key>  <string>Pirates of the Carribean</string>
+            <key>answer</key>  <string>2</string>
+            <key>tip</key>  <string>The main character is an emotionless and efficient killing machine.</string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>I feel the need for speed.</string>
+            <key>ans1</key>  <string>Top Gun</string>
+            <key>ans2</key>  <string>Twilight</string>
+            <key>ans3</key>  <string>Speed</string>
+            <key>answer</key>  <string>1</string>
+            <key>tip</key>  <string>Flying high.</string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>She doesn't even go here.</string>
+            <key>ans1</key>  <string>St Trinians</string>
+            <key>ans2</key>  <string>Wild Child</string>
+            <key>ans3</key>  <string>Mean Girls</string>
+            <key>answer</key>  <string>3</string>
+            <key>tip</key>  <string>No one likes a bully.</string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>It takes a great deal of bravery to stand up to your enemies, but a great deal more to stand up to your friends.</string>
+            <key>ans1</key>  <string>Pirates of the Carribean</string>
+            <key>ans2</key>  <string>Harry Potter</string>
+            <key>ans3</key>  <string>Toy Story</string>
+            <key>answer</key>  <string>2</string>
+            <key>tip</key>  <string>Cast a spell on me.</string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>I solemnly swear that I am up to no good.</string>
+            <key>ans1</key>  <string>Harry Potter</string>
+            <key>ans2</key>  <string>Shrek</string>
+            <key>ans3</key>  <string>The Lion King</string>
+            <key>answer</key>  <string>1</string>
+            <key>tip</key>  <string>Cast another spell on me.</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>You like pain? Try wearing a corset.</string>
+            <key>ans1</key>  <string>Spy kids</string>
+            <key>ans2</key>  <string>Shrek</string>
+            <key>ans3</key>  <string>Pirates of the Carribean</string>
+            <key>answer</key>  <string>3</string>
+            <key>tip</key>  <string>Aye, Aye, captain.</string>
+        </dict>       
+        
+    </array>
+</plist>
