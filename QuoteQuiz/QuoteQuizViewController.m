@@ -38,6 +38,8 @@
     self.quizIndex = 999;
     self.quiz = [[Quiz alloc] initWithQuiz:@"quotes"];
     self.questionLabel.backgroundColor = [UIColor colorWithRed:51/255.0 green:133/255.0 blue:238/255.0 alpha:1.0];
+    
+    [self.popupView setHidden:YES];
     [self nextQuizQuestion];
 }
 
@@ -157,4 +159,161 @@
     }
 }
 
+
+//Finish Quiz
+-(IBAction)finishButtonTouched:(UIButton *)sender
+{
+    
+    NSLog(@"status : %d,%d",self.quiz.correctCount,self.quiz.incorrectCount);
+    self.grade= @"";
+    int sum = self.quiz.incorrectCount+self.quiz.correctCount;
+    
+    double percent = (double)self.quiz.correctCount/(double)sum;
+
+    percent *= 100;
+    if (percent >=90) {
+        self.grade = [NSString stringWithFormat:@" Grade - A , You got %.0f%% ",percent];
+    }
+    else if (percent >= 80 &&  percent < 90)
+    {
+        self.grade = [NSString stringWithFormat:@" Grade - B , You got %.0f%% ",percent];
+
+    }
+    else if (percent >= 70 &&  percent < 80)
+    {
+        self.grade = [NSString stringWithFormat:@" Grade - C , You got %.0f%% ",percent];
+    }
+    else
+    {
+        self.grade = [NSString stringWithFormat:@" Grade - D , You got %.0f%% ",percent];
+
+    }
+    NSLog(@"%@",self.grade);
+    
+    [(UILabel *)[self.popupView viewWithTag:-1] setText:self.grade];
+    [self attachPopUpAnimation];
+    
+    NSLog(@"emaial share pressed");
+}
+
+- (IBAction)emailResult:(UIButton *)sender {
+    
+    NSString *stringSubject = @"This is my subject";
+    NSString *stringMessage = @"";
+    
+    [self sendMail:nil
+        andSubject:stringSubject
+           andBody:self.grade];
+
+}
+
+- (IBAction)closeButtonTouched:(UIButton *)sender {
+    
+    [[self popupView] setHidden:YES];
+}
+
+- (void)sendMail:(NSArray*)mailIDs andSubject:(NSString*)subject andBody:(NSString*)body {
+    
+    if ([MFMailComposeViewController canSendMail])
+    {
+        // setup mail object
+        MFMailComposeViewController * mailView = [[MFMailComposeViewController alloc] init];
+        
+        // set delegate
+        [mailView setMailComposeDelegate:self];
+        
+        // set to arrays
+        [mailView setToRecipients:mailIDs];
+        
+        // set subject
+        [mailView setSubject:subject];
+        
+        // set body of mail
+        body=[NSString stringWithFormat:@"<div><p>%@</p></div>", body];
+        
+        [mailView setMessageBody:body isHTML:YES];
+        
+        
+        // show the default mail of iPhone on present view
+        [self presentModalViewController:mailView animated:YES];
+//        [[self navigationController] presentViewController:mailView animated:YES completion:nil];
+        
+    }
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller
+          didFinishWithResult:(MFMailComposeResult)result
+                        error:(NSError*)error {
+    switch (result)
+    {
+        case MFMailComposeResultFailed:
+        {
+            
+        }
+            break;
+        case MFMailComposeResultCancelled:
+        {
+            
+        }
+            break;
+        case MFMailComposeResultSaved:
+        {
+            
+        }
+            
+            break;
+            
+            
+        case MFMailComposeResultSent:
+            
+            [[[UIAlertView alloc] initWithTitle:@"Success!"
+                                        message:@"Your mail has been sent successfully."
+                                       delegate:self
+                              cancelButtonTitle:@"OK"
+                              otherButtonTitles:nil, nil] show];
+            
+            break;
+            
+    }
+    // remove model from current view
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+#pragma mark -
+#pragma mark - Other Methods
+//add alert like animation
+
+- (void) attachPopUpAnimation
+{
+    [self.popupView setHidden:NO];
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation
+                                      animationWithKeyPath:@"transform"];
+    
+    CATransform3D scale1 = CATransform3DMakeScale(0.5, 0.5, 1);
+    CATransform3D scale2 = CATransform3DMakeScale(1.2, 1.2, 1);
+    CATransform3D scale3 = CATransform3DMakeScale(0.9, 0.9, 1);
+    CATransform3D scale4 = CATransform3DMakeScale(1.0, 1.0, 1);
+    
+    NSArray *frameValues = [NSArray arrayWithObjects:
+                            [NSValue valueWithCATransform3D:scale1],
+                            [NSValue valueWithCATransform3D:scale2],
+                            [NSValue valueWithCATransform3D:scale3],
+                            [NSValue valueWithCATransform3D:scale4],
+                            nil];
+    [animation setValues:frameValues];
+    
+    NSArray *frameTimes = [NSArray arrayWithObjects:
+                           [NSNumber numberWithFloat:0.0],
+                           [NSNumber numberWithFloat:0.5],
+                           [NSNumber numberWithFloat:0.9],
+                           [NSNumber numberWithFloat:1.0],
+                           nil];
+    [animation setKeyTimes:frameTimes];
+    
+    animation.fillMode = kCAFillModeForwards;
+    animation.removedOnCompletion = NO;
+    animation.duration = .5;
+    
+    [self.popupView.layer addAnimation:animation forKey:@"popup"];
+}
 @end

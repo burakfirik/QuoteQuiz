@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>72FC1A31-0C39-416D-92B9-A593B62F48DC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>QuoteQuiz</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>915284D9-EC61-480D-AF11-94B68C670CE8</key>
+		<string>https://github.com/burakfirik/QuoteQuiz.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>QuoteQuiz.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>915284D9-EC61-480D-AF11-94B68C670CE8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/burakfirik/QuoteQuiz.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>915284D9-EC61-480D-AF11-94B68C670CE8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>915284D9-EC61-480D-AF11-94B68C670CE8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>QuoteQuiz</string>
+		</dict>
+	</array>
+</dict>
+</plist>
